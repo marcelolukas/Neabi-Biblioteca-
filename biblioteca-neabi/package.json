@@ -1,0 +1,37 @@
+{
+  "name": "biblioteca-neabi",
+  "version": "1.0.0",
+  "description": "API e biblioteca digital de produções estudantis do NEABI Tia Ciata.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "test": "node --test",
+    "check": "node --check app.js && node --check public/script.js && node --check scripts/seed.js && node --test",
+    "db:seed": "node scripts/seed.js"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "postgresql",
+    "mongodb",
+    "sequelize",
+    "mongoose",
+    "neabi"
+  ],
+  "author": "Marcelo da Silva Junior — RA 2707039",
+  "license": "ISC",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=20.19.0"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "mongoose": "^9.10.1",
+    "pg": "^8.23.0",
+    "sequelize": "^6.37.8"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}

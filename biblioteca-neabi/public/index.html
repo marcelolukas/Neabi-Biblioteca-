@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Biblioteca de produções estudantis do NEABI Tia Ciata da UTFPR Cornélio Procópio.">
+  <meta name="theme-color" content="#a92824">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script>document.documentElement.classList.add('js')</script>
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/script.js" defer></script>
+  <title>Biblioteca | NEABI Tia Ciata</title>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="cabecalho">
+    <div class="identidade-do-site">
+      <a class="link-logo parent-link" href="https://github.com/marcelolukas/NEABI-UTFPR-Cornelio-Procopio-Site-Oficial" data-site-path="index.html" aria-label="Voltar ao site do NEABI Tia Ciata">
+        <img class="logo-do-site" src="/assets/logo-neabi-tia-ciata.png" alt="NEABI Tia Ciata — Cornélio Procópio">
+      </a>
+    </div>
+
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navegacao-principal">
+      <span class="menu-text">Menu</span><span class="menu-icon" aria-hidden="true"><i></i><i></i></span>
+    </button>
+
+    <nav class="navegacao" id="navegacao-principal" aria-label="Navegação principal">
+      <ul class="menu-principal">
+        <li><a class="parent-link" href="https://github.com/marcelolukas/NEABI-UTFPR-Cornelio-Procopio-Site-Oficial" data-site-path="index.html">Início</a></li>
+        <li><a class="parent-link" href="https://github.com/marcelolukas/NEABI-UTFPR-Cornelio-Procopio-Site-Oficial" data-site-path="pages/template_quem_somos.html">Quem somos</a></li>
+        <li><a class="parent-link" href="https://github.com/marcelolukas/NEABI-UTFPR-Cornelio-Procopio-Site-Oficial" data-site-path="pages/projetos.html">Projetos</a></li>
+        <li><a class="parent-link" href="https://github.com/marcelolukas/NEABI-UTFPR-Cornelio-Procopio-Site-Oficial" data-site-path="pages/eventos.html">Eventos</a></li>
+        <li><a class="parent-link" href="https://github.com/marcelolukas/NEABI-UTFPR-Cornelio-Procopio-Site-Oficial" data-site-path="pages/galeria.html">Galeria</a></li>
+        <li><a href="#inicio" aria-current="page">Biblioteca</a></li>
+      </ul>
+    </nav>
+
+    <a class="botao-contato parent-link" href="https://github.com/marcelolukas/NEABI-UTFPR-Cornelio-Procopio-Site-Oficial" data-site-path="pages/fale_Conosco.html">Fale conosco</a>
+  </header>
+
+  <main id="conteudo">
+    <section class="library-hero" id="inicio" aria-labelledby="hero-title">
+      <div class="breadcrumb"><a class="parent-link" href="https://github.com/marcelolukas/NEABI-UTFPR-Cornelio-Procopio-Site-Oficial" data-site-path="index.html">Início</a><span aria-hidden="true">/</span><span>Biblioteca</span></div>
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <p class="section-kicker">Biblioteca do NEABI Tia Ciata</p>
+          <h1 id="hero-title">Textos escritos por quem vive a universidade.</h1>
+          <p class="hero-intro">Um espaço do site do NEABI para publicar artigos, ensaios, relatos e resenhas produzidos por estudantes da UTFPR Cornélio Procópio.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#acervo">Explorar produções</a>
+            <a class="text-action" href="#como-publicar">Como publicar um texto</a>
+          </div>
+        </div>
+
+        <article class="featured-paper">
+          <p class="featured-label">Destaque do acervo</p>
+          <h2>Educação antirracista começa no cotidiano</h2>
+          <p class="featured-author">Produção coletiva · Estudantes do NEABI</p>
+          <p>Uma reflexão sobre como repertório, escuta e pequenas decisões pedagógicas transformam a experiência escolar.</p>
+          <button class="featured-reading" type="button">Ler apresentação</button>
+          <span class="paper-index" aria-hidden="true">biblioteca / 01</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="collection" id="acervo" aria-labelledby="collection-title">
+      <div class="section-intro">
+        <div>
+          <p class="section-kicker">Acervo estudantil</p>
+          <h2 id="collection-title">Artigos, ensaios e relatos em circulação.</h2>
+        </div>
+        <p>Os textos aproximam pesquisa, sala de aula e experiência estudantil. Cada publicação identifica sua autoria e passa pela curadoria do núcleo.</p>
+      </div>
+
+      <div class="collection-tools">
+        <label class="search-field" for="catalog-search">
+          <span>Buscar no acervo</span>
+          <span class="search-control">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m16 16 5 5"></path></svg>
+            <input id="catalog-search" type="search" placeholder="Título, autoria, tema ou formato" autocomplete="off">
+          </span>
+        </label>
+        <div class="filter-group" role="group" aria-label="Filtrar produções">
+          <button class="filter-button is-active" type="button" data-filter="todos" aria-pressed="true">Todas</button>
+          <button class="filter-button" type="button" data-filter="afro-brasilidade" aria-pressed="false">Afro-brasilidade</button>
+          <button class="filter-button" type="button" data-filter="povos-indigenas" aria-pressed="false">Povos indígenas</button>
+          <button class="filter-button" type="button" data-filter="educacao" aria-pressed="false">Educação</button>
+          <button class="filter-button" type="button" data-filter="memoria" aria-pressed="false">Memória</button>
+          <button class="filter-button" type="button" data-filter="literatura" aria-pressed="false">Literatura</button>
+          <button class="filter-button" type="button" data-filter="salvos" aria-pressed="false">Minha lista <span class="saved-count" aria-label="nenhuma produção salva">0</span></button>
+        </div>
+      </div>
+
+      <div class="catalog-status" aria-live="polite">
+        <p id="result-count">6 produções encontradas</p>
+        <button id="clear-filters" class="clear-action" type="button" hidden>Limpar busca e filtros</button>
+      </div>
+
+      <div class="catalog-list" id="catalog-list">
+        <article class="catalog-item catalog-featured" id="artigo-destaque" data-id="educacao-antirracista" data-categories="educacao afro-brasilidade" tabindex="-1">
+          <div class="item-meta"><span>Artigo de reflexão</span><span>8 min de leitura</span></div>
+          <div class="item-body">
+            <p class="item-theme">Educação e afro-brasilidade</p>
+            <h3>Educação antirracista começa no cotidiano</h3>
+            <p class="item-author">Produção coletiva · Estudantes do NEABI</p>
+            <p class="item-summary">Um ponto de partida para rever referências, escutar a comunidade escolar e transformar escolhas pedagógicas cotidianas.</p>
+            <div class="item-footer"><a class="read-link" href="#reading-dialog">Ler apresentação</a><button class="save-button" type="button" data-save="educacao-antirracista" aria-pressed="false"><span aria-hidden="true">◇</span><b>Guardar na minha lista</b></button></div>
+          </div>
+        </article>
+
+        <article class="catalog-item" data-id="literaturas-indigenas" data-categories="povos-indigenas literatura" tabindex="-1">
+          <div class="item-meta"><span>Ensaio</span><span>10 min de leitura</span></div>
+          <div class="item-body">
+            <p class="item-theme">Povos indígenas e literatura</p>
+            <h3>Literaturas indígenas: autoria, território e presente</h3>
+            <p class="item-author">Grupo de leitura e extensão · UTFPR-CP</p>
+            <p class="item-summary">Uma leitura sobre autorias indígenas contemporâneas para além de representações fixadas no passado.</p>
+            <div class="item-footer"><a class="read-link" href="#reading-dialog">Ler apresentação</a><button class="save-button" type="button" data-save="literaturas-indigenas" aria-pressed="false"><span aria-hidden="true">◇</span><b>Guardar na minha lista</b></button></div>
+          </div>
+        </article>
+
+        <article class="catalog-item" data-id="quilombos-memoria" data-categories="afro-brasilidade memoria" tabindex="-1">
+          <div class="item-meta"><span>Texto de pesquisa</span><span>12 min de leitura</span></div>
+          <div class="item-body">
+            <p class="item-theme">Afro-brasilidade e memória</p>
+            <h3>Quilombos: memória, território e resistência</h3>
+            <p class="item-author">Turma de estudos afro-brasileiros · UTFPR-CP</p>
+            <p class="item-summary">Conceitos e fontes para compreender comunidades quilombolas como territórios vivos de memória e produção de futuro.</p>
+            <div class="item-footer"><a class="read-link" href="#reading-dialog">Ler apresentação</a><button class="save-button" type="button" data-save="quilombos-memoria" aria-pressed="false"><span aria-hidden="true">◇</span><b>Guardar na minha lista</b></button></div>
+          </div>
+        </article>
+
+        <article class="catalog-item" data-id="mulheres-negras-escrita" data-categories="afro-brasilidade literatura memoria" tabindex="-1">
+          <div class="item-meta"><span>Resenha coletiva</span><span>9 min de leitura</span></div>
+          <div class="item-body">
+            <p class="item-theme">Literatura e memória</p>
+            <h3>Mulheres negras e a escrita de si</h3>
+            <p class="item-author">Caderno de leituras estudantis · NEABI</p>
+            <p class="item-summary">Como memória, linguagem e experiência redesenham a tradição literária brasileira.</p>
+            <div class="item-footer"><a class="read-link" href="#reading-dialog">Ler apresentação</a><button class="save-button" type="button" data-save="mulheres-negras-escrita" aria-pressed="false"><span aria-hidden="true">◇</span><b>Guardar na minha lista</b></button></div>
+          </div>
+        </article>
+
+        <article class="catalog-item" data-id="saberes-ciencia" data-categories="povos-indigenas educacao" tabindex="-1">
+          <div class="item-meta"><span>Artigo</span><span>7 min de leitura</span></div>
+          <div class="item-body">
+            <p class="item-theme">Povos indígenas e educação</p>
+            <h3>Saberes ancestrais e ciência: onde as conversas começam</h3>
+            <p class="item-author">Estudantes das licenciaturas · UTFPR-CP</p>
+            <p class="item-summary">Questões para trabalhar diferentes modos de produzir conhecimento sem hierarquizar experiências e perspectivas.</p>
+            <div class="item-footer"><a class="read-link" href="#reading-dialog">Ler apresentação</a><button class="save-button" type="button" data-save="saberes-ciencia" aria-pressed="false"><span aria-hidden="true">◇</span><b>Guardar na minha lista</b></button></div>
+          </div>
+        </article>
+
+        <article class="catalog-item" data-id="lei-10639" data-categories="educacao afro-brasilidade" tabindex="-1">
+          <div class="item-meta"><span>Relato de experiência</span><span>6 min de leitura</span></div>
+          <div class="item-body">
+            <p class="item-theme">Educação e afro-brasilidade</p>
+            <h3>Lei 10.639/03: caminhos construídos em sala de aula</h3>
+            <p class="item-author">Oficina de práticas pedagógicas · NEABI</p>
+            <p class="item-summary">Aprendizados de estudantes sobre como transformar uma obrigação curricular em prática contínua e contextualizada.</p>
+            <div class="item-footer"><a class="read-link" href="#reading-dialog">Ler apresentação</a><button class="save-button" type="button" data-save="lei-10639" aria-pressed="false"><span aria-hidden="true">◇</span><b>Guardar na minha lista</b></button></div>
+          </div>
+        </article>
+      </div>
+
+      <div class="empty-state" id="empty-state" hidden>
+        <h3>Nenhuma produção encontrada.</h3>
+        <p>Tente outro termo ou volte a ver todo o acervo estudantil.</p>
+        <button class="button button-secondary" type="button" data-clear>Ver todas as produções</button>
+      </div>
+    </section>
+
+    <section class="publication-flow" id="como-publicar" aria-labelledby="flow-title">
+      <div class="flow-heading">
+        <p class="section-kicker">Publicação estudantil</p>
+        <h2 id="flow-title">Do texto da disciplina ao acervo do NEABI.</h2>
+        <p>A biblioteca dá permanência e circulação às produções desenvolvidas por estudantes em aulas, projetos e ações de extensão.</p>
+      </div>
+      <ol class="flow-list">
+        <li><span class="flow-number">1</span><div><h3>Escreva</h3><p>Artigos, ensaios, resenhas e relatos devem identificar autoria, referências e vínculo com a temática do núcleo.</p></div></li>
+        <li><span class="flow-number">2</span><div><h3>Envie para curadoria</h3><p>A equipe do NEABI revisa informações, adequação editorial, autoria e autorização para publicação.</p></div></li>
+        <li><span class="flow-number">3</span><div><h3>Publique e compartilhe</h3><p>O texto passa a integrar esta biblioteca e pode ser encontrado por tema, formato e autoria.</p></div></li>
+      </ol>
+      <a class="button button-dark parent-link" href="https://github.com/marcelolukas/NEABI-UTFPR-Cornelio-Procopio-Site-Oficial" data-site-path="pages/fale_Conosco.html">Conversar com a equipe do NEABI</a>
+    </section>
+
+    <section class="institutional-band" aria-labelledby="institutional-title">
+      <div class="institutional-mark" aria-hidden="true">NEABI<br>UTFPR-CP</div>
+      <div>
+        <p class="section-kicker">Parte do site oficial</p>
+        <h2 id="institutional-title">A biblioteca amplia o trabalho do NEABI Tia Ciata.</h2>
+        <p>Ela não é um projeto separado: integra o mesmo espaço institucional, a mesma identidade visual e o compromisso do núcleo com formação, memória e produção de conhecimento.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="footer-logo parent-link" href="https://github.com/marcelolukas/NEABI-UTFPR-Cornelio-Procopio-Site-Oficial" data-site-path="index.html"><img src="/assets/logo-neabi-tia-ciata.png" alt="NEABI Tia Ciata"></a>
+    <p>Biblioteca de produções estudantis · UTFPR Câmpus Cornélio Procópio</p>
+    <p>© <span id="current-year"></span></p>
+  </footer>
+
+  <dialog class="reading-dialog" id="reading-dialog" aria-labelledby="dialog-title">
+    <button class="dialog-close" type="button" aria-label="Fechar leitura">×</button>
+    <p class="dialog-theme" id="dialog-theme"></p>
+    <h2 id="dialog-title"></h2>
+    <p class="dialog-author" id="dialog-author"></p>
+    <p class="dialog-intro" id="dialog-intro"></p>
+    <p class="dialog-note">Apresentação de uma produção do acervo estudantil.</p>
+    <button class="button button-secondary dialog-action" type="button">Fechar leitura</button>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+</body>
+</html>
